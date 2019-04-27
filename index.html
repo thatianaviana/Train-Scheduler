@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+    <!--Header for the train scheduler-->
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+            <h1 class="display-4">Destinazione Paradiso</h1>
+            <p class="lead"><i class="fa fa-train fa-2x" aria-hidden="true"></i> Hop on the train that will take you to
+                paradise!</p>
+
+        </div>
+    </div>
+    <!--First table with information about trains and thei schedule-->
+    <div class="panel panel-success" id="train">
+        <div class="panel-heading">
+            <h3 class="panel-title">Current Train Schedule <i class="fa fa-train fa-xs" aria-hidden="true"></i></h3>
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="name" >Train Name</th>
+                    <th scope="col" class="destination" >Destination</th>
+                    <th scope="col" class="frequency" >Frequency (min)</th>
+                    <th scope="col" class="arrival" >Next Arrival</th>
+                    <th scope="col" class="minutes" >Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <!-- <tr>
+                        <td scope="row" id="train-name"></td>
+                        <td scope="row" id="train-destination"></td>
+                        <td scope="row" id="train-frequency"></td>
+                        <td scope="row" id="train-arrival"></td>
+                        <td scope="row" id="train-minutes"></td>
+                    </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+    <section>
+        <div class="panel panel-success" id="add-train">
+            <div class="panel-heading">
+                <h3 class="panel-title"> Add Train <i class="fa fa-train fa-xs" aria-hidden="true"></i></h3>
+            </div>
+            <div class="train-input">
+                <form>
+                    <div class="form-group">
+                        <!-- Here we create the text box for capturing the imput term-->
+                        <div class="form-group">
+                            <label for="trainName">Train Name</label>
+                            <input type="text" class="form-control" id="train-input" placeholder="Paradise Express">
+                        </div>
+
+                        <!-- Here we capture the destination  -->
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination-input" placeholder="Anywhere But Here">
+                        </div>
+
+                        <!-- Here we capture the first train time-->
+                        <div class="form-group">
+                            <label for="firstTrain"> First Train Time (hh:mm-military time)</label>
+                            <input type="text" class="form-control" id="first-train" placeholder="06:00">
+                        </div>
+
+                        <!-- Here we capture the Frequency -->
+                        <div class="form-group">
+                            <label for="frequency">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequency-input" placeholder="10">
+                        </div>
+
+                        <!-- Here we have our final submit button -->
+                        <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-search"></i>
+                            Submit</button>
+                </form>
+            </div>
+
+    </section>
+    <!-- Firebase link  connects to Firebase library-->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+
+    <!-- jquery link  connects to jquery library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@mdo</td>
+                </tr> -->

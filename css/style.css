@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    height: 100%;
+    background-color: #043638;
+    /* background-image: url("http://eskipaper.com/images/train-background-1.jpg");    
+    background-size: 100%; */
+}
+
+/* .lead {
+    border: 3px solid #0d6376;
+    background-color: #e3dbdb;
+    opacity: 0.70; 
+} */
+.display-4 {
+    text-align: center;
+}
+.lead {
+    text-align: center;
+    font-weight: bolder;
+}
+i {
+    text-align: center;
+}
+.panel-heading {
+    background-color: #497147;
+    height: 40px;
+}
+
+#header {
+    margin: 30px;
+    /* opacity: 0.70; */
+    background-image: url("https://images3.alphacoders.com/106/106677.jpg");    
+    background-size: 40%;
+
+    color: white;
+}
+h3 {
+    margin-left: 20px;
+}
+
+#train {
+    margin: 30px;
+    border: 2px solid #0d6376;
+    background-color: white;
+    
+}
+
+section {
+    /* margin: 3px; */
+  margin: 30px;
+    border: 2px solid #0d6376;
+    background-color: white;
+}
+label {
+    margin: 10px;
+    padding-left: 10px;
+
+
+}
+#submit {
+    margin-left: 20px;
+}
+/* input {
+    margin-left: 10px;
+    margin-right: 20px;
+
+} */
